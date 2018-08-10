@@ -15,6 +15,7 @@ app.use(express.static(publicPath));
 io.on('connection', (socket) => {
     console.log('New user connected');
 
+<<<<<<< HEAD
     // socket.emit('newEmail', {
     //     from: 'mike@gmail.com',
     //     text: 'Hey.. wassup??',
@@ -53,6 +54,8 @@ io.on('connection', (socket) => {
         });
     });
 
+=======
+>>>>>>> parent of 9b7a37c... add message and new message event handlers
     socket.on('disconnect', () => {
         console.log('User was disconnected');
     });
